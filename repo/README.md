@@ -14,9 +14,9 @@ for your pipeline:
 ``` yaml
 resource_types:
 - name: repo
-  type: docker-image
+  type: registry-image
   source:
-    repository: us.gcr.io/concourse-resources/repo-resource
+    repository: docker.io/<dockerhub-username>/repo-resource
 ```
 
 ## Source Configuration
@@ -64,9 +64,9 @@ This resource does not implement `out`.
 ``` yaml
 resource_types:
 - name: repo
-  type: docker-image
+  type: registry-image
   source:
-    repository: us.gcr.io/concourse-resources/repo-resource
+    repository: docker.io/<dockerhub-username>/repo-resource
 
 resources:
 - name: example-repo
