@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM concourse/buildroot:git
+FROM docker.io/concourse/buildroot:git
 
 WORKDIR /opt/resource
 
-ADD gerrit-resource .
-RUN chmod +x gerrit-resource
-RUN ln -s gerrit-resource check
-RUN ln -s gerrit-resource in
-RUN ln -s gerrit-resource out
+ADD gerrit .
+RUN chmod +x gerrit
+RUN ln -s gerrit check
+RUN ln -s gerrit in
+RUN ln -s gerrit out

@@ -1,35 +1,19 @@
 # [Gerrit](https://www.gerritcodereview.com/) Resource for [Concourse](https://concourse.ci/)
 
-[![Build Status](https://travis-ci.org/google/concourse-resources.svg?branch=master)](https://travis-ci.org/google/concourse-resources)
-
 Tracks Gerrit change revisions (patch sets).
 
-*This is not an official Google product.*
-
-## Building and pushing the docker image
-
-### Building the project
+## Building and pushing the docker images
 
 ```
-mkdir -p src/github.com/google
-cd src/github.com/google
-git clone <this-repo>
-cd concourse-resources
-go mod init github.com/google/concourse-resources
-go mod tidy
-go mod vendor
+make
+make push
 ```
 
-### Pushing the docker image
+## Cleaning up
 
-1. Open `internal/common.mk`
-2. Set the value of `IMAGE_NAME` as `<your-dockerhub-username>/${NAME}`
-3. Run the following command to push the docker image 
-    ```
-    cd gerrit
-    ./make image-push
-    ```
-    This will push an image named `gerrit-resource` to your dockerhub account
+```
+make clean
+```
 
 ## Usage
 

@@ -31,7 +31,7 @@ import (
 
 	"golang.org/x/build/gerrit"
 
-	"github.com/google/concourse-resources/internal/resource"
+	"github.com/haiku/gerrit-resource/internal/resource"
 )
 
 const (

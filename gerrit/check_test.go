@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/google/concourse-resources/internal/resource"
+	"github.com/haiku/gerrit-resource/internal/resource"
 )
 
 func testCheck(t *testing.T, src Source, ver Version) []Version {

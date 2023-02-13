@@ -22,7 +22,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/google/concourse-resources/internal/resource"
+	"github.com/haiku/gerrit-resource/internal/resource"
 )
 
 var (
