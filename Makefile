@@ -1,4 +1,4 @@
-VERSION=0.0.3
+VERSION=0.0.4
 default:
 	docker build -t docker.io/haiku/gerrit-resource:$(VERSION) .
 clean:
