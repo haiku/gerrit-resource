@@ -106,7 +106,7 @@ func in(req resource.InRequest) error {
 		return err
 	}
 
-	err = git(dir, "fetch", "origin", fetchRef)
+	err = git(dir, "fetch", "--tags", "origin", fetchRef)
 	if err != nil {
 		return err
 	}
